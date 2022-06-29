@@ -1,0 +1,18 @@
+--# PARA MÁQUINAS COM 32 GB DE MEMÓRIA.
+
+--# SGA: 0
+
+--# PGA: 4 GB
+
+--# SHARED P00L: 4GB
+
+--# LARGE P00L 256 mb
+
+--# JAVA P00L: 256 mb
+
+--# STREMS P00L: 256 mb
+
+--# DB_CACHE SIZE: UNS 16 GB
+
+
+--# DEIXAR 8 GB PARA O SO.

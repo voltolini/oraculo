@@ -1,0 +1,18 @@
+--#VALIDAR O NOME DA BASE PARA RENOMEAR ARQUIVO
+echo ${ORACLE_SID}
+
+
+--#CRIAR VARIAVEL COM DATA
+WDT=`date "+%Y%m%d_%H%M%S"`
+
+
+--#RENOMEAR ARQUIVO COM A DATA
+mv alert_${ORACLE_SID}.log alert_${ORACLE_SID}_${WDT}.log
+
+
+--#CRIAR NOVO ARQUIVO
+touch alert_${ORACLE_SID}.log
+
+
+--#COMPACTAR O ALERT.LOG
+gzip alert_${ORACLE_SID}_${WDT}.log &
